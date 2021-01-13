@@ -4,6 +4,7 @@
   "description": "jiango sentry module",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --max-warnings 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
@@ -26,8 +27,6 @@
     "url": "https://github.com/yefei/jiango-node-sentry/issues"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.16.0",
     "jiango": "^1.4.8"
   },
   "dependencies": {
