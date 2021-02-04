@@ -1,7 +1,7 @@
 {
-  "name": "@jiango/sentry",
-  "version": "1.0.2",
-  "description": "jiango sentry module",
+  "name": "@zenweb/sentry",
+  "version": "1.0.0",
+  "description": "zenweb sentry module",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -12,7 +12,7 @@
     "email": "316606233@qq.com"
   },
   "keywords": [
-    "jiango",
+    "zenweb",
     "sentry"
   ],
   "files": [
@@ -21,13 +21,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yefei/jiango-node-sentry.git"
+    "url": "git+https://github.com/yefei/zenweb-sentry.git"
   },
   "bugs": {
-    "url": "https://github.com/yefei/jiango-node-sentry/issues"
+    "url": "https://github.com/yefei/zenweb-sentry/issues"
   },
   "devDependencies": {
-    "jiango": "^1.4.8"
+    "zenweb": "^1.0.1"
   },
   "dependencies": {
     "@sentry/node": "^5.29.2",

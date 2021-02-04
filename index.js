@@ -1,14 +1,14 @@
 /**
  * Sentry 模块
- * 并且使用 app.setup('@jiango/sentry', { dsn: 'xxxxx' }) 启用模块
+ * 并且使用 app.setup('@zenweb/sentry', { dsn: 'xxxxx' }) 启用模块
  */
 'use strict';
 
-const debug = require('debug')('jiango:sentry');
+const debug = require('debug')('zenweb:sentry');
 const Sentry = require('@sentry/node');
 
 /**
- * @param {import('jiango/lib/core')} core 
+ * @param {import('zenweb').Core} core 
  * @param {Sentry.NodeOptions} options
  */
 function sentry(core, options) {
