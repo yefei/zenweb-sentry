@@ -19,6 +19,8 @@ function sentry(core, options) {
     if (ctx) {
       Sentry.withScope(scope => {
         scope.addEventProcessor(event => Sentry.Handlers.parseRequest(event, ctx.request));
+        const requestId = ctx.get('x-request-id');
+        requestId && scope.setTag('request_id', requestId);
         Sentry.captureException(err);
       });
     } else {
