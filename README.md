@@ -13,8 +13,9 @@ app.js
 'use strict';
 
 const app = module.exports = require('zenweb').create();
+const { default: sentry } = require('@zenweb/sentry');
 
-app.setup('@zenweb/sentry', { dsn: 'xxxxx' });
+app.setup(sentry({ dsn: 'xxxxx' }));
 
 app.start();
 ```

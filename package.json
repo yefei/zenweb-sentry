@@ -1,12 +1,15 @@
 {
   "name": "@zenweb/sentry",
-  "version": "1.2.1",
+  "version": "2.3.0",
   "description": "zenweb sentry module",
-  "main": "index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc --build --clean && tsc"
   },
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "YeFei",
     "email": "316606233@qq.com"
@@ -24,10 +27,9 @@
     "url": "https://github.com/yefei/zenweb-sentry/issues"
   },
   "devDependencies": {
-    "zenweb": "^1.0.1"
+    "@zenweb/core": "^2.3.2"
   },
   "dependencies": {
-    "@sentry/node": "^5.29.2",
-    "debug": "^4.3.1"
+    "@sentry/node": "^6.16.1"
   }
 }
